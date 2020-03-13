@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'AvenirNextLTPro-Medium';
+  src: url('../fonts/2FDF27_8_0.woff2') format('woff2'), url('../fonts/2FDF27_8_0.woff') format('woff'), url('../fonts/2FDF27_8_0.ttf') format('truetype'), url('../fonts/2FDF27_8_0.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'TheHandBold';
+  src: url('../fonts/2EF3AC_0_0.eot');src: url('../fonts/2EF3AC_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2EF3AC_0_0.woff2') format('woff2'),url('../fonts/2EF3AC_0_0.woff') format('woff'),url('../fonts/2EF3AC_0_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noah Bold';
+  src: url('../fonts/3909F9_0_0.eot');src: url('../fonts/3909F9_0_0?#iefix') format('embedded-opentype'),url('../fonts/3909F9_0_0.woff2') format('woff2'),url('../fonts/3909F9_0_0.woff') format('woff'),url('../fonts/3909F9_0_0.ttf') format('truetype');
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noah Bold', sans-serif;
+}
+
+.bs-header-primary {
+
+  > h1 {
+    font-family: 'TheHandBold', cursive;
+    font-size: 4.5rem;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+}
+
+.bs-header-small {
+  font-weight: inherit;
+  text-transform: uppercase;
+  margin: 0;
+}

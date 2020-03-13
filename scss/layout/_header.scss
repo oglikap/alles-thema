@@ -1,0 +1,97 @@
+// LOGO
+.bs-header {
+
+  .bs-nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem 0 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+
+    @include respond-medium {
+
+    }
+
+    @include respond-large {
+      margin-top: 3rem;
+    }
+  }
+
+  .bs-logo {
+    display: flex;
+    align-items: center;
+
+    &__logo-box {
+      // padding: 4rem 0 0 10rem;
+    }
+
+    &__logo {
+      // margin: 1.25rem 0 0 .75rem;
+      width: 7rem;
+
+      @include respond-medium {
+        width: 8.5rem;
+      }
+    }
+  }
+
+  // MENU
+
+  .bs-navigation {
+
+    display: flex;
+    align-items: center;
+    // padding: 4rem 5rem 0 0;
+    // margin-bottom: 1rem;
+
+    &__menu {
+
+      > .uk-offcanvas-bar {
+        width: 100vw;
+      }
+    }
+
+    &__link {
+      display: inline-block;
+      font-family: $font-tertiary;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: #222;
+
+      transition: all .3s;
+
+      &:not(:last-of-type) {
+        // margin-right: 1rem;
+
+        &::after {
+          content: '|';
+          // display: inline-block;
+          margin: 0 .5rem;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.05);
+
+        text-decoration: none;
+      }
+
+      // &--home {
+      //   font-size: 5rem !important;
+      //   color: #222 !important;
+      // }
+
+    }
+
+    &__icon-location {
+      // margin-top: -.5rem;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+  }
+
+}

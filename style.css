@@ -1,0 +1,36 @@
+/*
+Theme Name: Alles Thema
+Theme URI: https://rutgerkroon.nl
+Author: Bad Schtroumpfies
+Description: Het thema voor Alles voor de Kunsten
+Version: 1.0
+License: GNU General Public License, version 3 (GPLv3)
+License URI: http://www.gnu.org/licenses/gpl-3.0.txt
+Tags: uikit3
+
+
+/* Alignment */
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 15px;
+	margin-right: 1.5rem;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 15px;
+	margin-left: 1.5rem;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+.alignnone {
+	margin: 10px 0;
+}

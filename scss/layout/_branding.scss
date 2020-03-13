@@ -1,0 +1,38 @@
+.bs-branding {
+  font-size: 1.5rem;
+
+  position: fixed;
+  transform: rotate(-90deg) translateY(-2.5rem);
+  top: 66.66667vh;
+  left: -5rem;
+
+  @include respond-medium {
+    font-size: 1.65rem;
+  }
+
+  @include respond-xlarge {
+    left: 0;
+  }
+
+  @include respond-xxlarge {
+    left: 5%;
+  }
+
+  @include respond-wide-screen {
+    left: 10%;
+  }
+
+  @include heading-default;
+
+  &__link {
+    color: inherit;
+    display: inline-block;
+    transition: all .2s;
+
+    &:hover {
+      transform: translateX(1rem) scale(1.02);
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}

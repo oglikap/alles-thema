@@ -1,0 +1,14 @@
+body {
+
+  .bs-wrapper {
+    position: relative;
+  }
+
+  main {
+    min-height: 67vh;
+  }
+
+  // @include respond-medium {
+  //   border: 1.5rem solid $color-grey-light-1;
+  // }
+}

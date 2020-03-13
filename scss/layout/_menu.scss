@@ -1,0 +1,44 @@
+.bs-navigation {
+
+
+  &__menu {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    color: #222;
+    text-transform: uppercase;
+    font-family: $font-secondary;
+
+    > li {
+      font-size: 1rem;
+
+      &:not(:first-of-type) {
+
+        ::before {
+          content: '|';
+          display: inline-block;
+          margin: .5rem;
+        }
+      }
+
+    }
+
+    > li > a {
+      color: inherit;
+      transition: all .2s;
+      display: inline-block;
+
+      &:hover {
+        text-decoration: none;
+        transform: scale(1.02);
+      }
+    }
+
+  }
+
+  .bs-active a {
+    color: $color-primary;
+  }
+
+}

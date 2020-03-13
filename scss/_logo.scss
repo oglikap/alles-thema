@@ -1,0 +1,79 @@
+.bs-diagonal-box {
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 5px;
+  color: #222;
+  text-align: right;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 5em solid transparent;
+    border-top-color: white;
+    border-left-color: white;
+    // border-top-color: #47c3df;
+    // border-left-color: #47c3df;
+  }
+  .uk-logo {
+    position: relative;
+    z-index: 1;
+    top: 33.3333%;
+  }
+}
+
+.bs-vertical-box-right {
+  position: relative;
+  width: 8em;
+  height: 8em;
+  padding: 8px;
+  color: black;
+  text-align: left;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 8em solid transparent;
+    border-bottom-color: #47c3df;
+    border-right-color: #47c3df;
+  }
+  h4 {
+    position: relative;
+    z-index: 1;
+    transform: rotate(-45deg);
+    top: 75%;
+  }
+
+}
+//
+// .page-template-page-producties .bs-vertical-box, .single-producties .bs-vertical-box {
+//   &:before {
+//     border-top-color: #fff;
+//     border-left-color: #fff;
+//   }
+// }
+
+@media screen and (min-width: 640px) {
+
+  .bs-diagonal-box {
+    width: 6em;
+    height: 6em;
+    padding: 3px;
+    &:before {
+      border: 6em solid transparent;
+      border-top-color: white;
+      border-left-color: white;
+    }
+  }
+
+}

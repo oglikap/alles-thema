@@ -1,0 +1,18 @@
+.bs-prev-next {
+  margin-top: 4rem;
+  color: #222;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    @include heading-default;
+
+    > a {
+      color: inherit;
+    }
+  }
+
+}
